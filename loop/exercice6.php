@@ -9,7 +9,7 @@
 		echo "<br /> Exercice 6 <br />";
 
 		for ($i = 1; $i <= 100; $i += 15) {
-			echo $i . "On tient le bon bout <br />";
+			echo $i . "C'est presque bon <br />";
 		}
 		?>
 </body>
