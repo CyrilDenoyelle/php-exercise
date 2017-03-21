@@ -6,6 +6,9 @@
 </head>
 <body>
 	<?php 
+	if(!$_GET['nom'] || !$_GET['prenom'] || !$_GET['age'] || !$_GET['dateDebut'] || !$_GET['dateFin'] || !$_GET['language'] || !$_GET['serveur'] || !$_GET['semaine'] || !$_GET['batiment'] || !$_GET['salle']){
+		echo "si l'url est comme ca \" ?nom=trukbidul&prenom=chosemachin&age=23&dateDebut=lafindumonde&dateFin=30fevrier&language=PHP&serveur=LAMP&semaine=64&batiment=12&salle=101 \" alors tout les exercices sont ok !! <br />";
+	}
 	echo 'Exercice 1 <br />';
 	if($_GET['nom'] && $_GET['prenom']){
 		echo $_GET['nom'] . " " . $_GET['prenom'] . "<br />";
@@ -28,7 +31,7 @@
 	if($_GET['language'] && $_GET['serveur']){
 		echo "language " . $_GET['language'] . " et serveur " . $_GET['serveur'];
 	}else{
-		echo 'si /?langage=PHP&serveur=LAMP est present dans l\'url on affiche "PHP" et "LAMP" dans la page';
+		echo 'si /?language=PHP&serveur=LAMP est present dans l\'url on affiche "PHP" et "LAMP" dans la page';
 	};
 	echo "<hr>Exercice 5 <br />";
 	if($_GET['semaine']){
