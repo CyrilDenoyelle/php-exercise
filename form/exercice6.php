@@ -19,7 +19,6 @@
 	try {
 		if ($_POST["first_name"] && $_POST["last_name"] && $_POST["file"]) {
 			$file = preg_split('/\./',$_POST["file"]);
-			var_dump($file);
 			$filename = $file[0];
 			$fileextension = $file[1];
 			echo "COUCOU " . $_POST["civilite"] . " " . $_POST["first_name"] . " " . $_POST["last_name"] . "<br />" . "et le fichier :" . $filename . ". Et dont l'extension est : " . $fileextension;
