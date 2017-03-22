@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ex5</title>
+	<title>Ex7</title>
 </head>
 <body>
 	
